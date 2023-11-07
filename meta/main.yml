@@ -1,6 +1,22 @@
 ---
+# --------------------------------
+
 dependencies:
 - src: git+https://github.com/cabtech/ansible-role-distro-ubuntu.git
   tags: always
   version: '1.0.1'
+
+galaxy_info:
+  author: Tim Short
+  description: OS bootstrap role
+  galaxy_tags: [ubuntu]
+  license: GPL v3
+  role_name: ansible_role_util_osbootstrap
+  min_ansible_version: "2"
+  namespace: cabtech
+  platforms:
+  - name: Ubuntu
+    versions: [bionic, focal, jammy]
+
+# --------------------------------
 ...

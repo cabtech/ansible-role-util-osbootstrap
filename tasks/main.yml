@@ -1,12 +1,13 @@
 ---
+# --------------------------------
 
-- name: 'bootstrap {{ct_distro}} role'
-  include_role:
-    name: ansible-role-distro-{{ct_distro}}
+- name: "Bootstrap role"
+  ansible.builtin.include_role:
+    name: ansible-role-distro-{{ ct_distro }}
     apply:
       tags:
       - always
-  tags:
-  - ct-osbootstrap
+  tags: [ct-osbootstrap]
 
+# --------------------------------
 ...
