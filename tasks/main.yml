@@ -3,7 +3,7 @@
 
 - name: "Bootstrap role"
   ansible.builtin.include_role:
-    name: ansible-role-distro-{{ ct_distro }}
+    name: ansible-role-distro-{{ ansible_facts['distribution'] | lower }}
     apply:
       tags:
       - always
