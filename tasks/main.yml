@@ -5,9 +5,8 @@
   ansible.builtin.include_role:
     name: ansible-role-distro-{{ ansible_facts['distribution'] | lower }}
     apply:
-      tags:
-      - always
-  tags: [ct-osbootstrap]
+      tags: ["always"]
+  tags: ["ct-osbootstrap"]
 
 # --------------------------------
 ...
